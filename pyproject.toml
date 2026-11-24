@@ -1,0 +1,72 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ov-streaming"
+version = "0.2.0"
+description = "Streaming video inference for LLaVA-OneVision-2.5 on vLLM and Transformers"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+dependencies = [
+  "httpx>=0.27",
+  "pillow>=10",
+]
+
+[project.urls]
+Homepage = "https://github.com/Kagura-0001/onevision-streaming"
+Repository = "https://github.com/Kagura-0001/onevision-streaming"
+Issues = "https://github.com/Kagura-0001/onevision-streaming/issues"
+
+[project.optional-dependencies]
+codec = [
+  "codec-video-prep==0.3.0",
+  "numpy>=1.23,<2",
+]
+codec-server = [
+  "codec-video-prep==0.3.0",
+  "numpy>=1.23,<2",
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.30",
+]
+upload = ["websockets>=14"]
+vllm = [
+  "vllm==0.25.1",
+  "transformers>=5.7.0,<5.10",
+  "qwen-vl-utils>=0.0.14",
+]
+transformers = [
+  "transformers>=5.7.0,<5.10",
+  "accelerate>=1.1.0",
+  "torch>=2.4",
+  "torchvision",
+  "opencv-python-headless",
+  "qwen-vl-utils>=0.0.14",
+]
+serve = [
+  "fastapi>=0.115",
+  "qwen-vl-utils>=0.0.14",
+  "uvicorn>=0.30",
+]
+test = [
+  "pytest>=8",
+  "qwen-vl-utils>=0.0.14",
+]
+
+[project.scripts]
+ov-streaming = "ov_streaming.serve:main"
+ov-codec-gateway = "ov_streaming.codec_gateway:main"
+
+[project.entry-points."vllm.general_plugins"]
+ov_streaming = "ov_streaming.vllm_plugin:register"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ov_streaming"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

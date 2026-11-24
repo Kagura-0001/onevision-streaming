@@ -1,0 +1,129 @@
+@@ input 1 source 0 control silence
+<|im_start|>system
+You are a real-time streaming video assistant.<|im_end|>
+<|im_start|>user
+<0.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<|im_end|>
+<|im_start|>assistant
+@@ input 2 source 0 control response
+<|im_start|>system
+You are a real-time streaming video assistant.<|im_end|>
+<|im_start|>user
+<0.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<|im_end|>
+<|im_start|>assistant
+<silence><|im_end|>
+<|im_start|>user
+<question_memory>{"timestep": "00:00:01", "content": "Tell me when the door opens."}</question_memory>
+<1.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<|im_end|>
+<|im_start|>assistant
+@@ input 3 source 0 control caption
+<|im_start|>system
+You are a real-time streaming video assistant.<|im_end|>
+<|im_start|>user
+<0.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<|im_end|>
+<|im_start|>assistant
+<silence><|im_end|>
+<|im_start|>user
+<question_memory>{"timestep": "00:00:01", "content": "Tell me when the door opens."}</question_memory>
+<1.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<|im_end|>
+<|im_start|>assistant
+<response><|im_end|>
+<|im_start|>user
+<2.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<|im_end|>
+<|im_start|>assistant
+@@ input 4 source 0 control silence
+<|im_start|>system
+You are a real-time streaming video assistant.<|im_end|>
+<|im_start|>user
+<0.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<|im_end|>
+<|im_start|>assistant
+<silence><|im_end|>
+<|im_start|>user
+<question_memory>{"timestep": "00:00:01", "content": "Tell me when the door opens."}</question_memory>
+<1.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<|im_end|>
+<|im_start|>assistant
+<response><|im_end|>
+<|im_start|>user
+<2.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<|im_end|>
+<|im_start|>assistant
+<captioning><|im_end|>
+<|im_start|>user
+<3.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<answer_memory>{"timestep": "00:00:02", "content": "A man in a red apron walks in."}</answer_memory>
+<answer_memory>{"timestep": "00:00:01", "content": "The door is still closed."}</answer_memory>
+<|im_end|>
+<|im_start|>assistant
+@@ input 5 source 0 control silence
+<|im_start|>system
+You are a real-time streaming video assistant.<|im_end|>
+<|im_start|>user
+<0.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<|im_end|>
+<|im_start|>assistant
+<silence><|im_end|>
+<|im_start|>user
+<question_memory>{"timestep": "00:00:01", "content": "Tell me when the door opens."}</question_memory>
+<1.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<|im_end|>
+<|im_start|>assistant
+<response><|im_end|>
+<|im_start|>user
+<2.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<|im_end|>
+<|im_start|>assistant
+<captioning><|im_end|>
+<|im_start|>user
+<3.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<answer_memory>{"timestep": "00:00:02", "content": "A man in a red apron walks in."}</answer_memory>
+<answer_memory>{"timestep": "00:00:01", "content": "The door is still closed."}</answer_memory>
+<|im_end|>
+<|im_start|>assistant
+<silence><|im_end|>
+<|im_start|>user
+<question_memory>{"timestep": "00:00:03.5", "content": "What is he holding?"}</question_memory>
+<3.500 seconds>
+<|im_end|>
+<|im_start|>assistant
+@@ input 6 source 1 control silence
+<|im_start|>system
+You are a real-time streaming video assistant.<|im_end|>
+<|im_start|>user
+<question_memory>{"timestep": "00:00:01", "content": "Tell me when the door opens."}</question_memory>
+<answer_memory>{"timestep": "00:00:02", "content": "A man in a red apron walks in."}</answer_memory>
+<answer_memory>{"timestep": "00:00:01", "content": "The door is still closed."}</answer_memory><question_memory>{"timestep": "00:00:03.5", "content": "What is he holding?"}</question_memory>
+<3.500 seconds>
+<|im_end|>
+<|im_start|>assistant
+<silence><|im_end|>
+<|im_start|>user
+<4.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<|im_end|>
+<|im_start|>assistant
+@@ input 7 source 1 control silence
+<|im_start|>system
+You are a real-time streaming video assistant.<|im_end|>
+<|im_start|>user
+<question_memory>{"timestep": "00:00:01", "content": "Tell me when the door opens."}</question_memory>
+<answer_memory>{"timestep": "00:00:02", "content": "A man in a red apron walks in."}</answer_memory>
+<answer_memory>{"timestep": "00:00:01", "content": "The door is still closed."}</answer_memory><question_memory>{"timestep": "00:00:03.5", "content": "What is he holding?"}</question_memory>
+<3.500 seconds>
+<|im_end|>
+<|im_start|>assistant
+<silence><|im_end|>
+<|im_start|>user
+<4.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<|im_end|>
+<|im_start|>assistant
+<silence><|im_end|>
+<|im_start|>user
+<5.0 seconds><|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>
+<|im_end|>
+<|im_start|>assistant

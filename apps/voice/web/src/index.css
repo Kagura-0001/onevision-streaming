@@ -1,0 +1,23 @@
+/* The kit first: its compiled utilities (.hidden, .flex, ...) would otherwise come
+   after the page's and override responsive ones such as lg:flex. */
+@import "@pipecat-ai/voice-ui-kit/styles";
+@import "tailwindcss";
+
+/* The kit defines its palette as --color-* for light and dark; these names point
+   at it without redefining it, so the page follows the kit's theme switch. */
+@theme inline {
+  --color-page: var(--color-background);
+  --color-surface: var(--color-card);
+  --color-raised: var(--color-muted);
+  --color-ink: var(--color-foreground);
+  --color-dim: var(--color-muted-foreground);
+  --color-line: var(--color-border);
+  --color-you: var(--color-client);
+  --color-ov: var(--color-agent);
+  --color-ok: var(--color-active);
+  --color-bad: var(--color-destructive);
+  --color-caution: var(--color-warning);
+}
+
+html, body, #root { height: 100%; }
+body { background: var(--color-background); color: var(--color-foreground); }
